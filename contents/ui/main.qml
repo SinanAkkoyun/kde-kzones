@@ -466,8 +466,8 @@ PlasmaCore.Dialog {
                         }
 
                         Components.Indicator {
-                            zones: config.layouts[currentLayout].zones
-                            activeZone: index
+                            zones: [config.layouts[currentLayout].zones[zoneIndex]]
+                            activeZone: 0
                             anchors.centerIn: parent
                             width: parent.width - 20
                             height: parent.height - 20
